@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="profile-section">
+            <div class="avatar" id="avatar">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1 class="welcome-message" id="greeting"></h1>
+            <p class="user-info" id="userName"></p>
+        </div>
+
+        <div class="fun-section">
+            <div class="mood-tracker">
+                <p>How are you feeling today?</p>
+                <div class="mood-buttons">
+                    <button class="mood-btn" data-mood="happy">😊</button>
+                    <button class="mood-btn" data-mood="excited">🎉</button>
+                    <button class="mood-btn" data-mood="relaxed">😌</button>
+                    <button class="mood-btn" data-mood="tired">😴</button>
+                </div>
+            </div>
+
+            <div class="fortune-cookie">
+                <button id="fortuneBtn" class="interactive-btn">
+                    <i class="fas fa-cookie-bite"></i> Get Fortune Cookie
+                </button>
+                <p id="fortuneText" class="fortune-text"></p>
+            </div>
+
+            <div class="weather-widget">
+                <div id="weather" class="weather-display">
+                    <button id="weatherBtn" class="interactive-btn">
+                        <i class="fas fa-cloud-sun"></i> Generate Weather
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </button>
+    </div>
+    <script type="module" src="js/welcome.js"></script>
+</body>
+</html>

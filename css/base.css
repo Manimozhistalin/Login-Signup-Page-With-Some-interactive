@@ -1,0 +1,26 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #6b48ff, #1cb5e0);
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    margin: 0 1rem;
+}
+
+.hidden {
+    display: none;
+}
